@@ -1,3 +1,6 @@
+import project1 from '../assets/projects/project1.png';
+import project2 from '../assets/projects/project2.png';
+
 // ============================================================
 // PROJECT DATA — edit all TODO: fields with your real content
 // ============================================================
@@ -6,7 +9,7 @@ const projects = [
   {
     id: 'bazar-dor',
     title: 'Bazar Dor',
-    image: '/src/assets/projects/project1.png',
+    image: project1,
     shortDescription:
       'TODO: Write a 1–2 sentence summary of what Bazar Dor does (e.g. "A marketplace app for …").',
     fullDescription:
@@ -28,7 +31,7 @@ const projects = [
   {
     id: 'fit-log',
     title: 'Fit Log',
-    image: '/src/assets/projects/project2.png',
+    image: project2,
     shortDescription:
       'TODO: Write a 1–2 sentence summary of what Fit Log does (e.g. "A fitness tracking app that …").',
     fullDescription:
