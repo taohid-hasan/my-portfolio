@@ -1,0 +1,92 @@
+/* ── Contact ──────────────────────────────────────────────────────────── */
+.contact .section__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__inner {
+  max-width: 720px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem;
+}
+
+.contact__header { width: 100%; }
+
+.contact__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact__card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+  border-radius: var(--radius-lg);
+  transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+
+.contact__card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact__card-icon--violet {
+  background: rgba(168,85,247,0.12);
+  border: 1px solid rgba(168,85,247,0.25);
+  color: #a855f7;
+}
+
+.contact__card-icon--cyan {
+  background: rgba(6,182,212,0.12);
+  border: 1px solid rgba(6,182,212,0.25);
+  color: #06b6d4;
+}
+
+.contact__card-icon--pink {
+  background: rgba(236,72,153,0.12);
+  border: 1px solid rgba(236,72,153,0.25);
+  color: #ec4899;
+}
+
+.contact__card-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 0.15rem;
+}
+
+.contact__card-value {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-h);
+  word-break: break-all;
+}
+
+.contact__cta { margin-top: 0.5rem; }
+
+.contact__cta-btn {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 680px) {
+  .contact__cards {
+    grid-template-columns: 1fr;
+  }
+}

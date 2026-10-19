@@ -1,0 +1,8 @@
+/* App-level component styles — kept minimal since most styling lives in component CSS files */
+
+/* Page transition wrapper */
+.page-transition {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
