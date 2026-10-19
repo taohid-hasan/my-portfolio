@@ -100,7 +100,7 @@ export default function Hero() {
 
           <motion.p className="hero__tagline" variants={itemVariants}>
             {/* TODO: Replace with your real tagline / short bio (1–2 sentences) */}
-            TODO: Add a short, compelling tagline about yourself here — e.g. what you build, what you&apos;re passionate about, or what makes you unique.
+            I build web apps that solve everyday problems, from tracking market prices to logging workouts.
           </motion.p>
 
           <motion.div className="hero__actions" variants={itemVariants}>
