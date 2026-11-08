@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ChevronDown, FolderOpen, FileText } from 'lucide-react';
 import heroPhoto from '../assets/my-photo.png';
+import resumePdf from '../assets/Taohid_Hasan_Nasim_Resume.pdf';
 import './Hero.css';
 
 // ── Typing animation config ──────────────────────────────────────────────────
@@ -108,10 +108,15 @@ export default function Hero() {
               <FolderOpen size={18} aria-hidden="true" />
               View Projects
             </a>
-            <Link to="/resume" className="btn btn--outline">
+            <a
+              href={resumePdf}
+              download="Taohid_Hasan_Nasim_Resume.pdf"
+              className="btn btn--outline"
+              aria-label="Download Taohid Hasan Nasim's resume as a PDF"
+            >
               <FileText size={18} aria-hidden="true" />
               Download Resume
-            </Link>
+            </a>
           </motion.div>
         </motion.div>
 

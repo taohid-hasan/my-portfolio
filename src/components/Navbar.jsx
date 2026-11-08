@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, Code2 } from 'lucide-react';
+import resumePdf from '../assets/Taohid_Hasan_Nasim_Resume.pdf';
 import './Navbar.css';
 
 // ── Nav links — update hrefs if you rename section IDs ──────────────────────
@@ -105,9 +106,15 @@ export default function Navbar() {
         </ul>
 
         {/* Resume CTA */}
-        <Link to="/resume" className="btn btn--outline navbar__resume">
+        <a
+          href={resumePdf}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn--outline navbar__resume"
+          aria-label="Open Taohid Hasan Nasim's resume PDF in a new tab"
+        >
           Resume
-        </Link>
+        </a>
 
         {/* Mobile hamburger */}
         <button
@@ -136,9 +143,16 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <Link to="/resume" className="btn btn--primary navbar__drawer-resume" onClick={() => setOpen(false)}>
+              <a
+                href={resumePdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn--primary navbar__drawer-resume"
+                onClick={() => setOpen(false)}
+                aria-label="Open Taohid Hasan Nasim's resume PDF in a new tab"
+              >
                 Resume
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
