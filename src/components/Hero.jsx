@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, FolderOpen, FileText } from 'lucide-react';
 import heroPhoto from '../assets/my-photo.png';
-import resumePdf from '../assets/Taohid_Hasan_Nasim_Resume.pdf';
 import './Hero.css';
 
 // ── Typing animation config ──────────────────────────────────────────────────
@@ -109,7 +108,7 @@ export default function Hero() {
               View Projects
             </a>
             <a
-              href={resumePdf}
+              href="/Taohid_Hasan_Nasim_Resume.pdf"
               download="Taohid_Hasan_Nasim_Resume.pdf"
               className="btn btn--outline"
               aria-label="Download Taohid Hasan Nasim's resume as a PDF"
